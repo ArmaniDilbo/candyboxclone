@@ -3,14 +3,14 @@ import { lollipopData } from './lollipops.js';
 
 let candiesDisplayEm = document.getElementById("candies");
 let lollipopsDisplayEm = document.getElementById("lollipops");
+let healthDisplayEms = document.getElementsByClassName("health")
 let weaponRackDisplayEm = document.getElementById("weapons");
 
 weaponRackDisplayEm.style.display = "none";
-
 function updateValues(){
     candiesDisplayEm.textContent = candyData.currentCandies;
     lollipopsDisplayEm.textContent = lollipopData.currentLollipops;
-
+    console.log("Hello world!")
 }
 
 
