@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <title>candyboxclone</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <button>Save</button><button>Load</button>
+        <br><br>
+
+        <div>Health <span id="currentHp">100</span>/<span id="maxHp">100</span></div>
         <p>Candies <span id="candies">0</span></p>
         <p>Lollipops <span id="lollipops">0</span></p>
-        <script src="scripts.js"></script>
+        <button>Eat All Candies</button>
+         <button>Throw 10 Candies</button>
+        <button id="weapons">Buy sword</button>
+        <button id="lollipop merchant">Buy a lollipop (60 candies)</button>
 
-        <div id="weapons">
-            <button>buy sword</button>
-        </div>
+        <script type="module" src="scripts.js"></script>
+        <script type="module" src="candies.js"></script>
+        <script type="module" src="lollipops.js"></script>
     </body>
 </html>
