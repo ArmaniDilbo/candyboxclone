@@ -10,7 +10,6 @@ weaponRackDisplayEm.style.display = "none";
 function updateValues(){
     candiesDisplayEm.textContent = candyData.currentCandies;
     lollipopsDisplayEm.textContent = lollipopData.currentLollipops;
-    console.log("Hello world!")
 }
 
 
