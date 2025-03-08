@@ -10,16 +10,48 @@
         <button>Save</button><button>Load</button>
         <br><br>
 
-        <div class="health">Health <span id="currentHp"></span>/<span id="maxHp"></span></div>
+        <div class="health">
+            Health <span id="currentHealth"></span>
+            /
+            <span id="maxHealth"></span>
+        </div>
         <p>Candies <span id="candies">0</span></p>
         <p>Lollipops <span id="lollipops">0</span></p>
-        <button>Eat All Candies</button>
-         <button>Throw 10 Candies</button>
-        <button id="weapons">Buy sword</button>
-        <button id="lollipop merchant">Buy a lollipop (60 candies)</button>
+        <button id="eatCandies" onclick="eatCandies()">Eat all the candies</button>
+        <span id="numEatenCandies"></span>
+        <span id="numThrownCandies"></span>
+        <button id="throwCandies" style="display:block">Throw 10 candies on the ground</button>
 
+
+        <button id="weaponShop" style="display:block">Buy <span id="weapon"></span></button>
+
+        <pre> <!-- candy merchant sprite-->
+            .---.
+            |   '.|  __
+            | ___.--'  )    
+        _.-'_` _%%%_/
+        .-'%%% a: a %%%
+            %%  L   %%_
+            _%\'-' |  /-.__
+         .-' / )--' #/     '\
+        /'  /  /---'(    :   \
+       /   |  /( /|##|  \     |
+      /   ||# | / | /|   \    \
+      |   ||##| I \/ |   |   _|
+      |   ||: | o  |#|   |  / |
+      |   ||  / I  |:/  /   |/
+      |   ||  | o   /  /    /
+      |   \|  | I  |. /    /
+       \  /|##| o  |.|    /
+        \/ \::|/\_ /  ---'|
+        
+         The candy merchant
+        </pre>
+        <button onclick="buyLollipop()" "lollipopMerchant">Buy a lollipop (60 candies)</button>
         <script type="module" src="scripts.js"></script>
         <script type="module" src="candies.js"></script>
         <script type="module" src="lollipops.js"></script>
+        <script type="module" src="health.js"></script>
+        <script type="module" src="weapons.js"></script>
     </body>
 </html>

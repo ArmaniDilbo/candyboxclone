@@ -1,6 +1,6 @@
 export let lollipopData = {
     currentLollipops: 0,
-    lollipopGrowth: 1
+    lollipopGrowth: 0
 }
 
 function addLollipops() {
